@@ -3,18 +3,61 @@
   "hostRequirements": {
     "cpus": 4
   },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+}
+  
+  
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "",
+  "postCreateCommand": "npm install -g @devcontainers/cli",
   "customizations": {
     "codespaces": {
-      "openFiles": []
+      "openFiles": [""]
     },
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
-        "ms-python.python"
-      ]
-    }
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "davidanson.vscode-markdownlint",
+        "teabyii.ayu",
+        "hediet.vscode-drawio",
+        "github.copilot",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-powertoys",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-vsliveshare.vsliveshare",
+        "zhuangtongfa.material-theme",
+        "esbenp.prettier-vscode",
+        "ms-python.vscode-pylance",
+        "mechatroner.rainbow-csv",
+        "vscode-icons-team.vscode-icons",
+        "donjayamanne.python-extension-pack",
+        "ms-python.vscode-python-envs",
+        "ms-python.debugpy",
+        "kevinrose.vsc-python-indent",
+        "ms-python.pylint",
+        "dongli.python-preview",
+        "njpwerner.autodocstring",
+        "codeium.codeium",
+        "visualstudioexptteam.vscodeintellicode",
+        "ms-vscode.js-debug-nightly",
+        "ms-vscode.theme-markdownkit",
+        "ms-vscode.theme-materialkit",
+        "googlecloudtools.cloudcode",
+        "google.geminicodeassist",
+        "google.gemini-cli-vscode-ide-companion",
+        "googlecloudtools.firebase-dataconnect-vscode",
+        "cloudtoolbox.cloudtoolbox",
+        "ms-python.autopep8",
+        "alefragnani.project-manager",
+        "donjayamanne.git-extension-pack"
+    ]
+      
+    },
+    
   }
 }
